@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+    body{
+        height:3000px;
+        background-color: #666666;
+        padding-left:54px;
+        padding-top: 54px;
+    }
+    .header{
+        background-color: #ffffff;
+        color: #000000;
+        position: fixed;
+        top: 2px;
+        left: 2px;
+        right:2px;
+        height:50px;
+        z-index: 1;
+    }
+    .sidebar{
+        background-color: #ffffff;
+        top: 54px;
+        position:fixed;
+        left:2px;
+        height:590px;
+        width:50px;
+    }
+    .absolute{
+        position:absolute;
+        background-color:#000000;
+        width:10px;
+        height:10px;
+        top:0;
+        right:0;
+        color:#ffffff;
+        padding-left:4px;
+        padding-right:0;
+        font-size: 8px;
+    }
+    .div1{
+        background-color: lightblue;
+        height:300px;
+        width:300px;
+        position: relative;
+    }
+    .div2{
+        background-color:lightpink;
+        width:300px;
+        height:300px;
+        margin-top:10px;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="header">header</div>
+
+    <div class="sidebar">sidebar
+        <div class="absolute">x</div>
+    </div>
+
+
+
+    <div class="div1">div1 
+        <div class="absolute">x</div>
+    </div>
+    <div class="div2">absolute</div>
+    
+</body>
+</html>
