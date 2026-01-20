@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .sidebar{
+            background-color: #999999;
+            width:90px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;            
+            justify-content: space-around;
+            border-right: #555555 solid 1px;
+
+        }
+        .sidebar-link{
+            display: flex;
+            flex-direction: column;
+            background-color: #888888;
+            margin-bottom:8px;
+            align-items: center;
+            padding: 18px 0px;
+
+        }
+        .sidebar-link p{
+            margin:0;
+            font-family: "Roboto",sans-serif,arial;
+            font-size: 12px;
+        }
+        .sidebar-link-logo{
+            height: 28px;
+            margin-bottom:6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img class="sidebar-link-logo" src="Image/icon-yt/home.svg">
+            <p>Home</p>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-link-logo" src="Image/icon-yt/explore.svg">
+            <p>Explore</p>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-link-logo" src="Image/icon-yt/subscriptions.svg">
+            <p>Subscriptions</p>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-link-logo" src="Image/icon-yt/originals.svg">
+            <p>Orignals</p>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-link-logo" src="Image/icon-yt/youtube-music.svg">
+            <p>Youtube Music</p>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-link-logo" src="Image/icon-yt/library.svg">
+            <p>Library</p>
+        </div>
+    </div>
+</body>
+</html>
