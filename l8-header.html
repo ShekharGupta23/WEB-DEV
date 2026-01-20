@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .header{
+            height:55px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .header img{
+            height: 24px;
+        }
+        .left{
+            width:200px;
+            display: flex;
+            align-items: center;
+        }
+        .youtube-logo{
+            height:21px;
+            margin-left:5px;
+        }
+        .hamburger-menu{
+            margin:0px 20px;
+        }
+
+
+        .middle{
+            flex:1;
+            margin-left: 50px;
+            margin-right: 35px;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+        }
+        .search-box{
+            flex: 1;
+            height:36px;
+            padding-left: 10px;
+            border: 1px solid #888888;
+            border-radius: 2px;
+            font-family: "Roboto",Arial;
+            font-size: 16px;
+            width: 0;
+        }
+        .search-box::placeholder{
+            font-family: "Roboto",Arial;
+            font-size: 16px;
+        }
+        .search-button{
+            height: 40px;
+            width: 60px;
+            background-color: #e6e6e6;
+            border: 1px solid #888888;
+            margin-left: -1px;
+            border-radius: 2px;
+        }
+        .search-icon{
+            margin-top: 4px;
+        }
+        .voice-search-button{
+            height: 40px;
+            width: 40px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+        .voice-search-icon{
+            margin-top: 4px;
+        }
+
+
+        .right{
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .profile{
+            height:40px;
+            border-radius: 50%;
+        }
+        .bell{
+            background-color: red;
+            position: absolute;
+            padding: 3px 3px;
+            font-family: "Roboto",arial,sans-serif;
+            border-radius: 50%;
+            font-size:7px;
+            color:#ffffff;
+            font-weight: 500;
+            margin:0;
+            top:-3px;
+            right:-3px;
+        }
+        .notification{
+            position: relative;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="left">
+        <img class="hamburger-menu" src="Image/icon-yt/hamburger-menu.svg" >
+        <img class="youtube-logo" src="Image/icon-yt/youtube-logo.svg">
+    </div>
+
+    <div class="middle">
+        <input class="search-box" placeholder="Search">
+        <button class="search-button">
+            <img class="search-icon" src="Image/icon-yt/search.svg">
+        </button>
+        <button class="voice-search-button">
+            <img class="voice-search-icon" src="Image/icon-yt/voice-search-icon.svg">
+
+        </button>
+    </div>
+
+    <div class="right">
+        <img class="icon" src="Image/icon-yt/upload.svg">
+        <img class="icon" src="Image/icon-yt/youtube-apps.svg">
+        <div class="notification">
+            <img class="icon" src="Image/icon-yt/notifications.svg">
+            <p class="bell">69</p>
+        </div>
+        <img class="profile" src="Image/icon-yt/unnamed.jpg">
+    </div>
+</div>
+
+</body>
+</html> 
