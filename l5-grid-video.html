@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+p{
+    font-family: "Roboto",Arial;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+.video-title{
+    font-weight:bold;
+    font-size:18px;
+    width: 250px;
+    line-height: 24px;
+    margin-bottom:5px;
+}
+.video-stats{
+    font-size: 14px;
+    color:rgb(96,96,96);
+    margin-bottom:5px;
+}
+.video-author{
+    font-size: 14px;
+    color:rgb(96,96,96);
+    margin-bottom: 20px;
+}
+.thumbnails{
+    width: 100%;
+}
+.channel-logo{
+    display: inline-block;
+    width: 50px;
+    object-fit: contain;
+    vertical-align: top;
+}
+.profile{
+    width: 40px;
+    border-radius: 50%;
+}
+.thumbnail-row1{
+    margin-bottom:8px;
+    position: relative;
+}
+.thumbnail-row2{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:16px;
+    row-gap:30px;
+}
+.timestamp{
+    background-color: rgba(0, 0, 0, 0.8);
+    color:#ffffff;
+    font-family: "Roboto",Arial,sans-serif;
+    font-size: 12px;
+    position: absolute;
+    padding:2px 6px;
+    border-radius: 4px;
+    bottom: 10px;
+    right: 10px;
+
+}
+    </style>
+</head>
+<body>
+<div class="video-grid">      
+    <div class="video-preview">
+        <div class="thumbnail-row1">    
+            <img class="thumbnails" src="Image/Thumbnails/hq720 (1).webp">
+            <p class="timestamp">11:11</p>
+        </div>
+        <div class="thumbnail-row2">
+            <div class="channel-logo">
+                <img class="profile" src="Image/Thumbnails/Channels/channels4_profile.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">did you just say classical music is boring?! (playlist) </p>
+                <p class="video-stats">9.6M views &#183; 2 years ago</p>
+                <p class="video-author">nobody &#10003;</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-preview">
+        <div class="thumbnail-row1">    
+            <img class="thumbnails" src="Image/Thumbnails/hq720.webp">
+            <p class="timestamp">11:11</p>
+        </div>
+        <div class="thumbnail-row2">
+            <div class="channel-logo">
+                <img class="profile" src="Image/Thumbnails/Channels/channels4_profile (1).jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">Building my Hardest Project Yet ... for a Furniture Competetion </p>
+                <p class="video-stats">1.3M views &#183; 4 months ago</p>
+                <p class="video-author">Studio Flow &#10003;</p>
+            </div>
+        </div>
+    </div>   
+</div>
+</body>
+</html>
